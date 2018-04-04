@@ -1,9 +1,13 @@
+############################################################
+## Contains variables and constaunts used throughout the game
+############################################################
+
 # Characters
 ################################################################################
 define defualt_name = "Anthony"
-define plyr_mom = "Mom"
-define plyr_dad = "Dad"
-define doc = "Doctor"
+define plyr_mom = Character("Mom")
+define plyr_dad = Character("Dad")
+define doc = Character("Doctor")
 
 define player = Character('[plyr_name]')
 define zack = Character("Zack")
