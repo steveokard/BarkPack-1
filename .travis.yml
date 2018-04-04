@@ -1,16 +1,19 @@
-before_script:
-  - sudo apt-get update -qq
-  - sudo apt-get install wget
+# Specify the language and install dependencies
 language: python
 python:
   - "2.7"
-# command to install dependencies
+
+# Install Ren'Py and navigate to the Ren'Py install directory
 install:
   - cd ..
-  - wget https://www.renpy.org/dl/6.99.14.24.2/renpy-6.99.14.24.2-sdk.tar.bz2
-  - tar xf renpy-6.99.14.2-sdk.tar.bz2
-  - rm renpy-6.99.14.2-sdk.tar.bz2
-  - mv renpy-6.99.14.2-sdk renpy
-  - cd renpy
-# command to run tests
-script: ./renpy.sh "../BarkPack/" lint && ./renpy.sh launcher distribute "../BarkPack/"
+  - wget http://www.renpy.org/dl/6.99.12/renpy-6.99.12-sdk.tar.bz2
+  - tar xf renpy-6.99.12-sdk.tar.bz2
+  - rm renpy-6.99.12-sdk.tar.bz2
+  - cd renpy-6.99.12-sdk
+
+# Configure Ren'Py to not use ALSA to avoid ALSA dependency errors
+env:
+  - SDL_AUDIODRIVER=dummy
+
+# Run the tests
+script: ./renpy.sh "../BarkPack/" lint
