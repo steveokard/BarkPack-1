@@ -1,52 +1,82 @@
-﻿# The script of the game goes in this file.
-
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
-define plyr_name = ""
-define anthony = Character('[plyr_name]') # Defualt: Anthony Wilcox
-define zack = Character("Zack Casey")
-
+# Before we begin, let's add in some RPG elements.
+################################################################################
 label start:
 
     # Parse in the bracket in the next that the game will display to promt
     # The player to enter the name they've choosen
-    $ plyr_name = renpy.input("What's your name? Leave blank for defualt.")
+    ############################################################################
+    if yes_no == "n":
+        $ plyr_name = renpy.input("Okay, we can try again. Leave blank for defualt.")
+    else:
+        plyr_dad "Horray!"
+        plyr_dad "It's a she!?"
+        plyr_dad "Or is it a he?"
+        plyr_mom "I don't know."
+        doc "They're a male everywhere but their genitals."
+        plyr_mom "Should we give them a male name?"
+        doc "It's up to you, but I'd stick with male."
+        $ plyr_name = renpy.input("Type in a name. Leave blank for defualt.")
+
     $ plyr_name = plyr_name.strip()
 
-    python:
-        if plyr_name == "":
-            plyr_name = "Anthony Wilcox"
+    python: # Fallback
+        if plyr_name == "" or yes_no == "":
+            plyr_name = defualt_name
 
-    "Zack and I have been freinds since we were children."
-    "Our parents use to send us to baseball games together."
+    $ yes_no = renpy.input("Do you wish to stay with \"[plyr_name]\"? \"y\" or \"n\", leave blank to continue.")
+    $ yes_no = yes_no.strip()
+
+    if yes_no == "y":
+        plyr_mom "We'll call you [plyr_name]"
+        jump chap1
+    elif yes_no == "n":
+        jump start
+    else:
+        plyr_mom "We'll call you [plyr_name]"
+        jump chap1
+
+# Story begins here
+################################################################################
+label chap1:
+
+    "15 years later."
+
+    "My name is [plyr_name]. And this is my freind Zack."
+    "We've known each other since kindergarten."
+    "Our parents like to send us to baseball games together."
     "I wasn't into baseball but I didn't mind joining my"
     "family as long as they let me play my tablet games."
 
-    anthony "I forgot my hat."
+    player "Mom, I forgot my hat."
 
     "But it wasn't always ideal."
 
     zack "Have you ever been to Poke Cola Stadium?"
-    anthony "Poke. Cola. Stadium?"
+    player "Poke. Cola. Stadium?"
     zack "..."
     zack "Long story."
-    anthony "No."
+    player "No."
     zack "Netheir have I."
-    anthony "Why do you ask?"
+    player "Why do you ask?"
     zack "I always wanted to go there."
-    anthony "I'll put it on my bucket list."
+    player "I'll put it on my bucket list."
 
-    "I was watching a live feed of G4TechTV. The Screen Savers"
+    "I was watching a live feed of G4. The Screen Savers"
     "was on right now with Attack of the Show up next."
 
     zack "Is that G4?"
-    anthony "Yup."
-    zack "I thought they ceased operations."
-    anthony "Someone brought the rights for an untold amounts."
+    player "Yup."
+    zack "I thought they shutdown."
+    player "Someone brought the rights for an untold amounts before it went off the air. Now it's back as G4 again. I'm so excited!"
     zack "Huh..."
 
     "I wasn't that interested in traditional sports, like Baseball."
-    "I preferred eSports. Rocket Leauge, an vehicular soccer video game, was more of my cup of tea."
+    "I preferred eSports. Rocket Leauge, an vehicular soccer game, was more of my cup of tea."
+    "G4 would air varies eSports tourments on weekdays."
+
+    zack "Have they ever figured what \"G4\" stands for?"
+    player "I always thought it meant \"Group of 4\"."
+    zack "Like a four player game?"
+    player "I think so."
 
     return
