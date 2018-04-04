@@ -1,3 +1,6 @@
+before_script:
+  - sudo apt-get update -qq
+  - sudo apt-get install wget
 language: python
 python:
   - "2.7"
