@@ -2,9 +2,6 @@
 ################################################################################
 label start:
 
-    # Parse in the bracket in the next that the game will display to promt
-    # The player to enter the name they've choosen
-    ############################################################################
     if yes_no == "n":
         $ plyr_name = renpy.input("Okay, we can try again. Leave blank for defualt.")
     else:
@@ -44,7 +41,7 @@ label start:
 label chap1:
 
     $ delay()
-    "17 years later."
+    "15 years later."
 
     # At a baseball game
 
@@ -113,22 +110,23 @@ label chap2:
     $ delay()
     zack "Hey, [plyr_name]?"
     player "Yeah?"
-    zack "What's it like having"
-    $ delay()
-    zack "...?"
-    $ delay()
-    player "..."
-    player "Oh! Um..."
-    $ delay()
-    player "Sometimes I don't know which public bathroom to choose."
+    zack "I know you like to listen to music. And I was thinking..."
+    player "Hm?"
 
-    "Deep down I was sad. I almost teared up. I didn't understood why since something as trivial as going to the bathroom shouldn't be this much of a deal."
+    "Zack got out a nackle with a cassette around it."
 
-    player "I'm male here but female down there. Why can't we-?"
+    player "For me?"
+    zack "Yeah!"
+    player "Thank you so much."
 
-    "Then I looked up at Zack who was looking right into my teary eyes. I paused and tilted my head in curiosity."
+    "I decided to wrap the necklace around me immediately. In return, I gave him my blue on black hat."
 
-    zack "C-ca-can I?"
+    zack "Really?"
+    player "Yeah!"
+    zack "Thank you so much!"
+
+    "Zack wore the hat immediately as I did."
+    "Afterwards, we hugged each other really tight."
 
     "5 years later."
     $ delay()
