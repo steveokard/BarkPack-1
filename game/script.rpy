@@ -8,7 +8,7 @@ label start:
     if yes_no == "n":
         $ plyr_name = renpy.input("Okay, we can try again. Leave blank for defualt.")
     else:
-        plyr_dad "Horray!"
+        plyr_dad "Hooray!"
         $ delay()
         plyr_dad "It's a she!?"
         plyr_dad "Or is it a he?"
@@ -47,7 +47,7 @@ label chap1:
     "15 years later."
 
     $ delay()
-    "My name is [plyr_name]. And this is my freind Zack."
+    "My name is [plyr_name]. And this is my friend Zack."
     "We've known each other since kindergarten."
     "Our parents like to send us to baseball games together."
     "I wasn't into baseball but I didn't mind joining my"
@@ -72,12 +72,12 @@ label chap1:
     zack "Is that G4?"
     player "Yup."
     zack "I thought they shutdown."
-    player "Someone brought the rights for an untold amounts before it went off the air. I'm so excited!"
+    player "Someone brought the rights for an untold amount before it went off the air. I'm so excited!"
     zack "Huh..."
 
     "I wasn't that interested in traditional sports, like Baseball."
     "I preferred eSports. Rocket Leauge, an vehicular soccer game, was more of my cup of tea."
-    "G4 would air varies eSports tourments on weekdays."
+    "G4 would air various eSports tourments on weekdays."
 
     zack "Have they ever figured what \"G4\" stands for?"
     player "I always thought it meant \"Group of 4\"."
