@@ -25,7 +25,7 @@ label start:
 
     python: # Fallback
         if plyr_name == "" or yes_no == "":
-            plyr_name = default_name
+            plyr_name = defualt_name
 
     $ yes_no = renpy.input("Do you wish to stay with \"[plyr_name]\"? Type in \"y\", \"n\" or leave blank to continue.")
     $ yes_no = yes_no.strip()
