@@ -25,7 +25,7 @@ label start:
 
     python: # Fallback
         if plyr_name == "" or yes_no == "":
-            plyr_name = defualt_name
+            plyr_name = default_name
 
     $ yes_no = renpy.input("Do you wish to stay with \"[plyr_name]\"? Type in \"y\", \"n\" or leave blank to continue.")
     $ yes_no = yes_no.strip()
@@ -44,7 +44,9 @@ label start:
 label chap1:
 
     $ delay()
-    "15 years later."
+    "17 years later."
+
+    # At a baseball game
 
     $ delay()
     "My name is [plyr_name]. And this is my friend Zack."
@@ -76,12 +78,60 @@ label chap1:
     zack "Huh..."
 
     "I wasn't that interested in traditional sports, like Baseball."
-    "I preferred eSports. Rocket Leauge, an vehicular soccer game, was more of my cup of tea."
-    "G4 would air various eSports tourments on weekdays."
+    "I preferred eSports. Rocket Leauge, an vehicular soccer game, was more of my cup of tea. G4 would simulcast various eSports tourments on weekdays."
 
     zack "Have they ever figured what \"G4\" stands for?"
-    player "I always thought it meant \"Group of 4\"."
+    player "I always thought it meant \"Group of 4\"?"
     zack "Like a four player game?"
     player "I think so."
+
+    jump chap2
+
+label chap2:
+
+    "Later, we went back to Zack's house after the game."
+
+    player "Hey, Mom can I sleep over at Zack's tonight?"
+    plyr_mom "If it's fine with his mother. I see no reason why not to."
+    zack "Yay!"
+
+    "After our parents agreed to let us stay over Zack and I began to settle down."
+
+    zack "Check out all these baseball cards I have."
+    player "Wow! You're quite a collector."
+    zack "It's just a hobby."
+
+    "Zack and I checked out all the cool cards he had collected over the years."
+
+    zack "So what's on G4 right now?"
+    player "Cinematech. Then a Counter Strike tourment from UCCleague tonight."
+    zack "Isn't Cinematech your favorite show?"
+    player "Yeah. However, I spend sometime with you for once."
+
+    "Zack paused with a blush."
+
+    $ delay()
+    zack "Hey, [plyr_name]?"
+    player "Yeah?"
+    zack "What's it like having"
+    $ delay()
+    zack "...?"
+    $ delay()
+    player "..."
+    player "Oh! Um..."
+    $ delay()
+    player "Sometimes I don't know which public bathroom to choose."
+
+    "Deep down I was sad. I almost teared up. I didn't understood why since something as trivial as going to the bathroom shouldn't be this much of a deal."
+
+    player "I'm male here but female down there. Why can't we-?"
+
+    "Then I looked up at Zack who was looking right into my teary eyes. I paused and tilted my head in curiosity."
+
+    zack "C-ca-can I?"
+
+    "5 years later."
+    $ delay()
+    "Present day."
 
     return

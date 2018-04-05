@@ -4,7 +4,7 @@
 
 # Characters
 ################################################################################
-define defualt_name = "Anthony"
+define default_name = "Anthony"
 define plyr_mom = Character("Mom")
 define plyr_dad = Character("Dad")
 define doc = Character("Doctor")
