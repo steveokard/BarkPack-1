@@ -35,7 +35,7 @@ label chap2:
     "Later, we went back to Zack's house after the game."
 
     anthony "Hey, Mom can I sleep over at Zack's tonight?"
-    plyr_mom "If it's fine with his mother. I see no reason why not to."
+    mom "If it's fine with his mother. I see no reason why not to."
     zack "Yay!"
 
     "After our parents agreed to let us stay over Zack and I began to settle down."
