@@ -24,17 +24,9 @@ label start:
 
     zack "Is that G3?"
     anthony "Yup."
-    zack "I thought they shutdown."
-    anthony "Someone brought the rights for an untold amount before it went off the air. I'm so excited!"
-    zack "Huh..."
 
     "I wasn't that interested in traditional sports, like Baseball."
     "I preferred eSports. Rocket Leauge, an vehicular soccer game, was more of my cup of tea. G3 would simulcast various eSports tourments on weekdays."
-
-    zack "Have they ever figured what \"G3\" stands for?"
-    anthony "I always thought it meant \"Group of 4\"?"
-    zack "Like a four anthony game?"
-    anthony "I think so."
 
     jump chap2
 
@@ -62,10 +54,13 @@ label chap2:
     "Zack paused with a blush."
 
     $ delay()
+
     zack "Hey, Anthony?"
     anthony "Yeah?"
     zack "I know you like to listen to music. And I was thinking..."
     anthony "Hm?"
+
+    # show pic cassetteneckplace
 
     "Zack got out a nackle with a cassette around it."
 
@@ -76,14 +71,18 @@ label chap2:
     zack "Yeah."
     anthony "Thank you!"
 
-    "I decided to wrap the necklace around me immediately. In return, I gave him my blue on black hat."
+    # show pic wrapnecklace
 
-    zack "Really?"
-    anthony "Yeah!"
-    zack "Thank you so much!"
+    $ delay()
 
-    "Zack wore the hat immediately as I did."
-    "Afterwards, we hugged each other really tight."
+    anthony "You know what?"
+    zack "What?"
+    anthony "Have my hat."
+    zack "..."
+    zack "But."
+    anthony "Keep it."
+
+    # show pic sleepoverhug
 
     "5 years later."
     $ delay()
