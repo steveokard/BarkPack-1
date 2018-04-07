@@ -1,1 +1,1 @@
-# Bark Pack
+![](assets/logo.png)

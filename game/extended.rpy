@@ -1,11 +1,13 @@
-############################################################
 ## Extends the functionality of Ren'Py
 ## or provides wrappers around existing
 ## Ren'Py functions
-############################################################
 
-init 1 python:
-     ## Returns random dialog on each new game run.
+init -1 python:
+
+    # Multi-game persitence data
+    bp_arc = MultiPersistent("barkpack.arc")
+
+    ## Returns random dialog on each new game run.
     ## Though, technically it can be anything.
     ## Example: $ lalala = random_dialogue(["blablabla", "tatata", "lalala"])
     ## Based on https://lemmasoft.renai.us/forums/viewtopic.php?f=8&t=47341
