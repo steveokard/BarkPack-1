@@ -4,6 +4,8 @@
 
 label start:
 
+    # show pic baseballpark
+
     zack "Have you ever been to Poke Cola Stadium?"
     anthony "Poke. Cola. Stadium?"
     zack "..."
@@ -14,6 +16,8 @@ label start:
     zack "I always wanted to go there."
     anthony "I'll put it on my bucket list."
 
+    $ addToJournal("Anthony adds Poke Cola Stadium to his bucket list.")
+
     "I was watching a live feed of G3. The Screen Savers was on right now with Attack of the Show up next. I was waiting for X-Play."
 
     zack "Is that G3?"
@@ -22,11 +26,22 @@ label start:
     "I wasn't that interested in traditional sports, like Baseball."
     "I preferred eSports. Rocket Leauge, an vehicular soccer game, was more of my cup of tea. G3 would simulcast various eSports tourments on weekdays."
 
+    # show pic baseballflyover
 
+    anthony "Zack! Zack!"
+    zack "I see it! I see it!"
+
+    $ delay()
+
+    zack "..."
+    anthony "..."
+    zack "And there it goes."
 
     jump chap2
 
 label chap2:
+
+    # show pic zackbedroom
 
     "Later, we went back to Zack's house after the game."
 

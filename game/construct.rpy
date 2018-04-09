@@ -8,10 +8,10 @@
 define mom = Character(_("Mom"))
 define dad = Character(_("Dad"))
 define anthony = Character(_("Anthony"))
-define zack = Character(_("Zack")
+define zack = Character(_("Zack"))
 
 ## Variables ###################################################################
 define is_true = False # Used for varies choices
 
 ## Constants ###################################################################
-define bp_license = "The binaries and source code of this product have been made available to you under the Mozilla Public License 2.0 (MPL)."
+define bp_license = _("The binaries and source code of this program have been made available to you under the Mozilla Public License 2.0 (MPL).")

@@ -29,15 +29,3 @@ init -1 python:
     ## By defualt this is 1.0, although it can be changed.
     def delay(dur = 1.0):
         renpy.pause(dur)
-
-screen journal:
-    tag menu
-
-    use game_menu(_("Journal"), scroll="viewport"):
-
-        style_prefix "journal"
-
-        vbox:
-            spacing 10
-            for item in mp.journal:
-                text item
