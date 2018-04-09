@@ -1,14 +1,8 @@
-## Prologue ####################################################################
+################################################################################
+## This file is licensed to you under the MPL 2.0 license.
+## See the LICENSE file in the project root for more information.
+
 label start:
-
-    "My name is Anthony. And this is my friend Zack."
-    "We've known each other since kindergarten."
-    "Our parents like to send us to baseball games together."
-    "I wasn't into baseball but I didn't mind joining my family as long as they let me play my tablet games."
-
-    anthony "Mom, I forgot my hat."
-
-    "But it wasn't always ideal."
 
     zack "Have you ever been to Poke Cola Stadium?"
     anthony "Poke. Cola. Stadium?"
@@ -27,6 +21,8 @@ label start:
 
     "I wasn't that interested in traditional sports, like Baseball."
     "I preferred eSports. Rocket Leauge, an vehicular soccer game, was more of my cup of tea. G3 would simulcast various eSports tourments on weekdays."
+
+
 
     jump chap2
 
@@ -49,7 +45,7 @@ label chap2:
     zack "So what's on G3 right now?"
     anthony "Cinematech. Then a Counter Strike tourment from UCCleague tonight."
     zack "Isn't Cinematech your favorite show?"
-    anthony "Yeah. However, I spend sometime with you for once."
+    anthony "Yeah. However, I can let it pass for you."
 
     "Zack paused with a blush."
 
@@ -62,14 +58,15 @@ label chap2:
 
     # show pic cassetteneckplace
 
-    "Zack got out a nackle with a cassette around it."
+    "Zack got out a necklace with a cassette around it."
 
     zack "I made this."
     anthony "I like it."
     zack "Do you want?"
     anthony "Really?"
-    zack "Yeah."
+    zack "Yeah. I know how much you like music."
     anthony "Thank you!"
+    $ addToJournal("Zack hands Anthony his cassette necklace.")
 
     # show pic wrapnecklace
 
@@ -79,13 +76,17 @@ label chap2:
     zack "What?"
     anthony "Have my hat."
     zack "..."
-    zack "But."
-    anthony "Keep it."
+
+    $ delay()
+
+    zack "But, I."
+    anthony "You like hats. No? Keep it."
+    $ addToJournal("Anthony hands Zack his blue on black hat.")
 
     # show pic sleepoverhug
 
-    "5 years later."
-    $ delay()
-    "Present day."
+    # jump chap3
+
+label chap3:
 
     return

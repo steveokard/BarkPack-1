@@ -1,5 +1,4 @@
-﻿
-translate None strings:
+﻿translate None strings:
 
     # 00action_file.rpy:26
     old "{#weekday}Monday"
@@ -1120,4 +1119,3 @@ translate None strings:
     # 00console.rpy:639
     old "jump <label>: jumps to label"
     new "jump <label>: jumps to label"
-

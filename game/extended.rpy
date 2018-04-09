@@ -1,11 +1,21 @@
-## Extends the functionality of Ren'Py
-## or provides wrappers around existing
-## Ren'Py functions
+################################################################################
+## This file is licensed to you under the MPL 2.0 license.
+## See the LICENSE file in the project root for more information.
+
+init python:
+
+    # Multi-game persitence data
+    mp = MultiPersistent("barkpack.mp")
+
+init:
+    if not mp.journal:
+        $ mp.journal = []
 
 init -1 python:
 
-    # Multi-game persitence data
-    bp_arc = MultiPersistent("barkpack.arc")
+    def addToJournal(item):
+        if item not in mp.journal:
+            mp.journal.append(item)
 
     ## Returns random dialog on each new game run.
     ## Though, technically it can be anything.
@@ -19,3 +29,15 @@ init -1 python:
     ## By defualt this is 1.0, although it can be changed.
     def delay(dur = 1.0):
         renpy.pause(dur)
+
+screen journal:
+    tag menu
+
+    use game_menu(_("Journal"), scroll="viewport"):
+
+        style_prefix "journal"
+
+        vbox:
+            spacing 10
+            for item in mp.journal:
+                text item
