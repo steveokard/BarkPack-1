@@ -4,13 +4,10 @@
 
 label start:
 
-    # show pic baseballpark
+    # show pic fairviewfield
 
-    zack "Have you ever been to Poke Cola Stadium?"
-    anthony "Poke. Cola. Stadium?"
-    zack "..."
-    zack "Long story."
-    anthony "No."
+    zack "Have you ever been to Icy Blaze Park?"
+    anthony "Icy Blaze Park? No."
     zack "Netheir have I."
     anthony "Why do you ask?"
     zack "I always wanted to go there."
@@ -111,16 +108,19 @@ label scene3:
     anthony "Up for some DDR?"
     zack "Sure!"
 
-    ## The DDR
     menu:
-        "Play DDR song 1" if played_ddr1:
-            jump ddr_game1
+        "Play DDR song 1":
+            jump ddr_scene1
 
-        "Play DDR song 2" if played_ddr2:
-            jump ddr_game2
+        "Play DDR song 2":
+            jump ddr_scene2
 
-        "Play DDR song 3" if played_ddr3:
-            jump ddr_game3
+        "Play DDR song 3":
+            jump ddr_scene3
+
+    zack "Good game."
+    anthony "Maybe we can play another time?"
+    zack "Yeah!"
 
     jump scene4
 

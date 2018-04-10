@@ -11,10 +11,7 @@ define anthony = Character(_("Anthony"))
 define zack = Character(_("Zack"))
 
 ## Variables ###################################################################
-define is_true = False
-define played_ddr1 = False
-define played_ddr2 = False
-define played_ddr3 = False
+
 
 ## Constants ###################################################################
 define bp_license = _("The binaries and source code of this program have been made available to you under the Mozilla Public License 2.0 (MPL).")
