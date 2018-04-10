@@ -37,13 +37,15 @@ label start:
     anthony "..."
     zack "And there it goes."
 
-    jump chap2
+    jump scene2
 
-label chap2:
+label scene2:
 
-    # show pic zackbedroom
+    # show pic zackhouse
 
     "Later, we went back to Zack's house after the game."
+
+    # show pic zackbedroom
 
     anthony "Hey, Mom can I sleep over at Zack's tonight?"
     mom "If it's fine with his mother. I see no reason why not to."
@@ -100,8 +102,14 @@ label chap2:
 
     # show pic sleepoverhug
 
-    # jump chap3
+    jump scene3
 
-label chap3:
+label scene3:
+
+    # show pic anthonyhouse
+
+    anthony "Up for some DDR?"
+
+label scene4:
 
     return

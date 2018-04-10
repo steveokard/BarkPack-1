@@ -29,3 +29,11 @@ init -1 python:
     ## By defualt this is 1.0, although it can be changed.
     def delay(dur = 1.0):
         renpy.pause(dur)
+
+    ## Loads a song if it exists, and plays it.
+    def if_soundtrack(track, ply=True):
+        if renpy.loadable(track):
+            if ply is True:
+                renpy.music.play(track)
+            elif ply is False:
+                renpy.music.stop()
