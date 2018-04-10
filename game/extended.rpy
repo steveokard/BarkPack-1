@@ -22,8 +22,7 @@ init -1 python:
     ## Example: $ lalala = random_dialogue(["blablabla", "tatata", "lalala"])
     ## Based on https://lemmasoft.renai.us/forums/viewtopic.php?f=8&t=47341
     def random_dialogue(dialog_list):
-        dialogue = renpy.random.choice(dialog_list)
-        return dialogue
+        return renpy.random.choice(dialog_list)
 
     ## Pauses the game for brief second.
     ## By defualt this is 1.0, although it can be changed.
@@ -31,9 +30,13 @@ init -1 python:
         renpy.pause(dur)
 
     ## Loads a song if it exists, and plays it.
+    ## The purpose is to allow for soundtracks
+    ## as optional content packs in order
+    ## to avoid the obvious.
     def if_soundtrack(track, ply=True):
         if renpy.loadable(track):
             if ply is True:
+                renpy.music.stop() # Substitute for queue support
                 renpy.music.play(track)
             elif ply is False:
                 renpy.music.stop()

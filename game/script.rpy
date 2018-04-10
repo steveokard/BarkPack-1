@@ -83,6 +83,7 @@ label scene2:
     anthony "Really?"
     zack "Yeah. I know how much you like music."
     anthony "Thank you!"
+
     $ addToJournal("Zack hands Anthony his cassette necklace.")
 
     # show pic wrapnecklace
@@ -98,6 +99,7 @@ label scene2:
 
     zack "But, I."
     anthony "You like hats. No? Keep it."
+
     $ addToJournal("Anthony hands Zack his blue on black hat.")
 
     # show pic sleepoverhug
@@ -106,9 +108,21 @@ label scene2:
 
 label scene3:
 
-    # show pic anthonyhouse
-
     anthony "Up for some DDR?"
+    zack "Sure!"
+
+    ## The DDR
+    menu:
+        "Play DDR song 1" if played_ddr1:
+            jump ddr_game1
+
+        "Play DDR song 2" if played_ddr2:
+            jump ddr_game2
+
+        "Play DDR song 3" if played_ddr3:
+            jump ddr_game3
+
+    jump scene4
 
 label scene4:
 

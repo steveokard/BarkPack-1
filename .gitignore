@@ -1,6 +1,10 @@
 ### Project ###
 
 !README.txt
+**/*.ogg
+**/*.mp3
+**/*.opus
+**/*.wav
 
 ### Ren'Py ###
 
