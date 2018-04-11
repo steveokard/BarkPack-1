@@ -13,7 +13,7 @@ label start:
     zack "I always wanted to go there."
     anthony "I'll put it on my bucket list."
 
-    $ addToJournal("Anthony adds Icy Blaze Park to his bucket list.")
+    $ journal_entry("Anthony adds Icy Blaze Park to his bucket list.")
 
     "I was watching a live feed of G3. The Screen Savers was on right now with Attack of the Show up next. I was waiting for X-Play."
 
@@ -81,7 +81,7 @@ label scene2:
     zack "Yeah. I know how much you like music."
     anthony "Thank you!"
 
-    $ addToJournal("Zack hands Anthony his cassette necklace.")
+    $ journal_entry("Zack hands Anthony his cassette necklace.")
 
     # show pic wrapnecklace
 
@@ -97,7 +97,7 @@ label scene2:
     zack "But, I."
     anthony "You like hats. No? Keep it."
 
-    $ addToJournal("Anthony hands Zack his blue on black hat.")
+    $ journal_entry("Anthony hands Zack his blue on black hat.")
 
     # show pic sleepoverhug
 
@@ -134,10 +134,12 @@ label scene4:
     zack "Is it possible for you to get pregnant?"
     anthony "Wait, wha!?"
 
-    menu:
-        "I don't know.":
-            anthony "I don't know. Kinda difficult to find out."
+    $ delay()
 
-    # $ addToJournal("Zack discovered out ")
+    anthony "I don't know. A little to shy to find out."
+    zack "You're a-?"
+    anthony "Yes."
+
+    # $ journal_entry("Zack discovered Anthony is a virgin.")
 
     return

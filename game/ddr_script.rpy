@@ -23,7 +23,7 @@ label ddr_scene1:
     anthony "[anthony_loss_dialog]"
     zack "[zack_win_dialog]"
 
-    # $ addToJournal("Zack found out Anthony liked .")
+    # $ journal_entry("Zack found out Anthony liked .")
 
     jump scene3
 
@@ -32,7 +32,7 @@ label ddr_scene2:
     zack "[zack_loss_dialog]"
     anthony "[anthony_win_dialog]"
 
-    # $ addToJournal("Anthony found out Zack liked .")
+    # $ journal_entry("Anthony found out Zack liked .")
 
     jump scene3
 
@@ -41,7 +41,7 @@ label ddr_scene3:
     anthony "[anthony_loss_dialog]"
     zack "[zack_win_dialog]"
 
-    # $ addToJournal("Zack found out Anthony liked .")
+    # $ journal_entry("Zack found out Anthony liked .")
 
     jump scene3
 
@@ -50,6 +50,6 @@ label ddr_scene4:
     zack "[zack_loss_dialog]"
     anthony "[anthony_win_dialog]"
 
-    # $ addToJournal("Anthony found out Zack liked .")
+    # $ journal_entry("Anthony found out Zack liked .")
 
     jump scene3

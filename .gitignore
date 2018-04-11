@@ -14,6 +14,7 @@ game/**/*.ogg
 game/**/*.wav
 game/**/*.opus
 game/saves/**
+game/python-packages/**
 
 # Created by https://www.gitignore.io/api/macos,linux,python,windows,pycharm,libreoffice,visualstudiocode
 

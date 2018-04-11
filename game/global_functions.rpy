@@ -13,7 +13,7 @@ init:
 
 init -1 python:
 
-    def addToJournal(item):
+    def journal_entry(item):
         if item not in mp.journal:
             mp.journal.append(item)
 
@@ -40,3 +40,9 @@ init -1 python:
                 renpy.music.play(track)
             elif ply is False:
                 renpy.music.stop()
+
+    ## Check if the file exists and return the
+    ## and return the file name if it does
+    def get_file(file):
+        if renpy.loadable(file):
+            return file
