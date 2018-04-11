@@ -13,7 +13,7 @@ label start:
     zack "I always wanted to go there."
     anthony "I'll put it on my bucket list."
 
-    $ addToJournal("Anthony adds Poke Cola Stadium to his bucket list.")
+    $ addToJournal("Anthony adds Icy Blaze Park to his bucket list.")
 
     "I was watching a live feed of G3. The Screen Savers was on right now with Attack of the Show up next. I was waiting for X-Play."
 
@@ -118,6 +118,9 @@ label scene3:
         "Play DDR song 3":
             jump ddr_scene3
 
+        "Play DDR song 4":
+            jump ddr_scene4
+
     zack "Good game."
     anthony "Maybe we can play another time?"
     zack "Yeah!"
@@ -125,5 +128,16 @@ label scene3:
     jump scene4
 
 label scene4:
+
+    # show pic downtownfairview
+
+    zack "Is it possible for you to get pregnant?"
+    anthony "Wait, wha!?"
+
+    menu:
+        "I don't know.":
+            anthony "I don't know. Kinda difficult to find out."
+
+    # $ addToJournal("Zack discovered out ")
 
     return

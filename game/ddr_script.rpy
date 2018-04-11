@@ -6,10 +6,10 @@
 ## during the course of the story while also getting a peek into their musical
 ## interests. The songs they're good at echos their musical tastes.
 
-define zack_ddr_win = ["Haha, I won!"]
-define anthony_ddr_win = ["Booya!"]
-define zack_ddr_loss = [""]
-define anthony_ddr_loss = [""]
+define zack_ddr_win = ["Haha, I won!", "I just love this song."]
+define anthony_ddr_win = ["Booya!", "It's my favorite song."]
+define zack_ddr_loss = ["Almost had it."]
+define anthony_ddr_loss = ["Next time I'll get it."]
 
 init python:
 
@@ -20,21 +20,36 @@ init python:
 
 label ddr_scene1:
 
-    zack "[zack_win_dialog]"
     anthony "[anthony_loss_dialog]"
+    zack "[zack_win_dialog]"
+
+    # $ addToJournal("Zack found out Anthony liked .")
 
     jump scene3
 
 label ddr_scene2:
 
-    anthony "[anthony_win_dialog]"
     zack "[zack_loss_dialog]"
+    anthony "[anthony_win_dialog]"
+
+    # $ addToJournal("Anthony found out Zack liked .")
 
     jump scene3
 
 label ddr_scene3:
 
-    zack "[zack_win_dialog]"
     anthony "[anthony_loss_dialog]"
+    zack "[zack_win_dialog]"
+
+    # $ addToJournal("Zack found out Anthony liked .")
+
+    jump scene3
+
+label ddr_scene4:
+
+    zack "[zack_loss_dialog]"
+    anthony "[anthony_win_dialog]"
+
+    # $ addToJournal("Anthony found out Zack liked .")
 
     jump scene3

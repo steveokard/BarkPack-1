@@ -1,18 +1,18 @@
 ### Project ###
 
-!README.txt
-**/*.ogg
-**/*.mp3
-**/*.opus
-**/*.wav
+!game/**/PLACEHOLDER
 
 ### Ren'Py ###
 
 *.txt
-tmp/**/
+tmp/**
 game/**/*.bak
 game/**/*.rpyb
 game/**/*.rpyc
+game/**/*.mp3
+game/**/*.ogg
+game/**/*.wav
+game/**/*.opus
 game/saves/**
 
 # Created by https://www.gitignore.io/api/macos,linux,python,windows,pycharm,libreoffice,visualstudiocode
