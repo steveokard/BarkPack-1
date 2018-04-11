@@ -19,4 +19,4 @@ define bp_license = _("The binaries and source code of this program have been ma
 # TBA
 
 ## Soundtrack ##################################################################
-define theme_song = "[music_dir]/theme.song"
+define theme_song = "[music_dir]/theme.ogg"
