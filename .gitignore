@@ -1,5 +1,6 @@
 ### Project ###
 
+*.TMP
 !game/**/PLACEHOLDER
 
 ### Ren'Py ###

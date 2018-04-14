@@ -4,7 +4,7 @@
 
 label start:
 
-    # show pic fairviewfield
+    # show bg fairviewfield
 
     zc "Have you ever been to Icy Blaze Park?"
     aw "Icy Blaze Park? No."
@@ -17,13 +17,13 @@ label start:
 
     "I was watching a live feed of G3. The Screen Savers was on right now with Attack of the Show up next. I was waiting for X-Play."
 
-    # show pic g3screensavers
+    # show bg g3screensavers
 
     kc "Stay tuned. The Screen Savers will be right back!"
 
     $ delay()
 
-    # show pic fairviewfield
+    # show bg fairviewfield
 
     zc "Is that G3?"
     aw "Yup."
@@ -34,7 +34,7 @@ label start:
     "I wasn't that interested in traditional sports, like Baseball."
     "I preferred eSports. Rocket Leauge, an vehicular soccer game, was more of my cup of tea. G3 would simulcast various eSports tourments on weekdays."
 
-    # show pic baseballflyover
+    # show bg baseballflyover
 
     aw "Zack! Zack!"
     zc "I see it! I see it!"
@@ -49,11 +49,11 @@ label start:
 
 label scene2:
 
-    # show pic zchouse
+    # show bg zackhouse
 
     "Later, we went back to zc's house after the game."
 
-    # show pic zcbedroom
+    # show bg zackroom
 
     zc "Check out all these baseball cards I have."
     aw "Wow! You're quite a collector."
@@ -75,7 +75,7 @@ label scene2:
     zc "I know you like to listen to music. And I was thinking..."
     aw "Hm?"
 
-    # show pic cassetteneckplace
+    # show bg cassetteneckplace
 
     "Zack got out a necklace with a cassette around it."
 
@@ -88,7 +88,7 @@ label scene2:
 
     $ journal_entry("Zack Casey hands aw his cassette necklace.")
 
-    # show pic wrapnecklace
+    # show bg wrapnecklace
 
     $ delay()
 
@@ -104,14 +104,15 @@ label scene2:
 
     # $ journal_entry("Anthony Wilcox hands zc his blue on black hat.")
 
-    # show pic sleepoverhug
+    # show bg sleepoverhug
 
     jump scene3
 
 label scene3:
 
+    # show bg andrewshouse
+
     aw "Up for some DDR?"
-    zc "Sure!"
 
     menu:
         "Play DDR song 1":
@@ -125,26 +126,35 @@ label scene3:
 
         "Play DDR song 4":
             jump ddr_scene4
+        "Skip":
+            $ ddr_skip = True
+            zc "Maybe next time."
+            aw "Okay."
 
-    zc "Good game."
-    aw "Maybe we can play another time?"
-    zc "Yeah!"
+    if ddr_skip is False:
+        zc "Good game."
+        aw "Maybe we can play another time?"
+        zc "Yeah!"
 
     jump scene4
 
 label scene4:
 
-    # show pic downtownfairview
+    # show bg anthonysroom
 
     zc "Is it possible for you to get pregnant?"
     aw "Wait, wha!?"
+    aw "... Uh."
 
     $ delay()
 
-    aw "I don't know. A little to shy to find out."
+    aw "I don't know. Never tried to do {b}it{/b} before."
     zc "You're a-?"
     aw "Yes."
 
     # $ journal_entry("Zack Casey discovered aw is a virgin.")
+
+    zc "Why not?"
+    aw ""
 
     return

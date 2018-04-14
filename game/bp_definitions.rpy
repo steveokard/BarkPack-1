@@ -20,7 +20,9 @@ default bp_license = _("The binaries and source code of this program have been m
 # TBA
 
 ## Images ######################################################################
-# TBA
+define ddr_skip = False
+# ddr_mode is a possible future mini-game
+define ddr_mode = False
 
 ## Soundtrack ##################################################################
 define theme_song = "[music_dir]/theme.ogg"
