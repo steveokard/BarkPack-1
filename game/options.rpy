@@ -184,6 +184,10 @@ init python:
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
 
+    # Bark Pack
+    build.classify('assets/.**', None)
+    build.classify('notes/.**', None)
+
     ## To archive files, classify them as 'archive'.
 
     build.classify('game/**.png', 'archive')
