@@ -6,22 +6,22 @@
 ## during the course of the story while also getting a peek into their musical
 ## interests. The songs they're good at echos their musical tastes.
 
-define zack_ddr_win = ["Haha, I won!", "I just love this song."]
-define anthony_ddr_win = ["Booya!", "It's my favorite song."]
-define zack_ddr_loss = ["Almost had it."]
-define anthony_ddr_loss = ["Next time I'll get it."]
+define zc_ddr_win = ["Haha, I won!", "I just love this song."]
+define aw_ddr_win = ["Booya!", "It's my favorite song."]
+define zc_ddr_loss = ["Almost had it."]
+define aw_ddr_loss = ["Next time I'll get it."]
 
 init python:
 
-    zack_win_dialog = random_dialogue(zack_ddr_win)
-    anthony_win_dialog = random_dialogue(anthony_ddr_win)
-    zack_loss_dialog = random_dialogue(zack_ddr_loss)
-    anthony_loss_dialog = random_dialogue(anthony_ddr_loss)
+    zc_win_dialog = random_dialogue(zc_ddr_win)
+    aw_win_dialog = random_dialogue(aw_ddr_win)
+    zc_loss_dialog = random_dialogue(zc_ddr_loss)
+    aw_loss_dialog = random_dialogue(aw_ddr_loss)
 
 label ddr_scene1:
 
-    anthony "[anthony_loss_dialog]"
-    zack "[zack_win_dialog]"
+    aw "[aw_loss_dialog]"
+    zc "[zc_win_dialog]"
 
     # $ journal_entry("Zack found out Anthony liked .")
 
@@ -29,8 +29,8 @@ label ddr_scene1:
 
 label ddr_scene2:
 
-    zack "[zack_loss_dialog]"
-    anthony "[anthony_win_dialog]"
+    zc "[zc_loss_dialog]"
+    aw "[aw_win_dialog]"
 
     # $ journal_entry("Anthony found out Zack liked .")
 
@@ -38,8 +38,8 @@ label ddr_scene2:
 
 label ddr_scene3:
 
-    anthony "[anthony_loss_dialog]"
-    zack "[zack_win_dialog]"
+    aw "[aw_loss_dialog]"
+    zc "[zc_win_dialog]"
 
     # $ journal_entry("Zack found out Anthony liked .")
 
@@ -47,8 +47,8 @@ label ddr_scene3:
 
 label ddr_scene4:
 
-    zack "[zack_loss_dialog]"
-    anthony "[anthony_win_dialog]"
+    zc "[zc_loss_dialog]"
+    aw "[aw_win_dialog]"
 
     # $ journal_entry("Anthony found out Zack liked .")
 

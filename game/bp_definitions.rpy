@@ -3,14 +3,18 @@
 ## See the LICENSE file in the project root for more information.
 
 ## Characters ##################################################################
-define mom = Character(_("Mom"))
-define dad = Character(_("Dad"))
-define anthony = Character(_("Anthony"))
-define zack = Character(_("Zack"))
+define aw = Character(_("Anthony Wilcox"))
+define zc = Character(_("Zack Casey"))
+define kw = Character(_("Kit Welsh"))
+# Possible extras
+define wg = Character(_("Winter Green"))
+define kc = Character(_("Kevin Clover")) # G3TV, Screen Savers
+define sl = Character(_("Samantha Lane")) # G3TV, Screen Savers
+define rc = Character(_("Ronald Chump")) # Trump paraody, not president
 
 ## Constants ###################################################################
-define music_dir = "music"
-define bp_license = _("The binaries and source code of this program have been made available to you under the Mozilla Public License 2.0 (MPL).")
+default music_dir = "music"
+default bp_license = _("The binaries and source code of this program have been made available to you under the Mozilla Public License 2.0 (MPL).")
 
 ## Variables ###################################################################
 # TBA
