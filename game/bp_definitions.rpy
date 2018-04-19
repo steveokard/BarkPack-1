@@ -7,6 +7,7 @@ define aw = Character(_("Anthony Wilcox"))
 define zc = Character(_("Zack Casey"))
 define kw = Character(_("Kit Welsh"))
 # Possible extras
+define ds = Character(_("DMV Sloth")) # Filler name
 define wg = Character(_("Winter Green"))
 define kc = Character(_("Kevin Clover")) # G3TV, Screen Savers
 define sl = Character(_("Samantha Lane")) # G3TV, Screen Savers
