@@ -33,12 +33,41 @@ label scene2:
 
     "An hour later"
     ds "Now serving 45."
-
     zc "This is gonna take forever."
+
+    rc "Scuse me. A billion dollars walking through."
+    aw "And who are you?"
+    rc "Ronald Chump. Billionare."
+    zc "We got the latter part already."
+    rc "Myself and I are coming to renew my license."
+
+    zc "Then get in line like the rest of us."
+    rc "Of course. Jinkins, fetch my papers while I wait in line with these kids."
+    jk "Yes, sir."
+    aw "We're in our 20s."
+    rc "Ronald will only be in line only for a second."
+    zc "He only tells the truth by accident, folks."
+
+    jk "We're done."
+    rc "Now drive Chump back home."
+    jk "Yes, sir."
+
+    & delay()
+    zc "..."
+    & delay()
+    aw "..."
+    & delay()
+    zc "So what's on G3TV, Anthony?"
+    aw "Um, well..."
+
+    & delay()
+    ds "Now serving 100."
 
     jump scene3
 
 label scene3:
+
+    ds "Now serving 185"
 
     jump scene4
 

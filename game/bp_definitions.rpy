@@ -6,9 +6,10 @@
 define aw = Character(_("Anthony Wilcox"))
 define zc = Character(_("Zack Casey"))
 define kw = Character(_("Kit Welsh"))
-# Possible extras
+# Extras
 define ds = Character(_("DMV Sloth")) # Filler name
 define wg = Character(_("Winter Green"))
+define jk = Character(_("Jinkins")) # Reusable character, think Nurse Joy
 define kc = Character(_("Kevin Clover")) # G3TV, Screen Savers
 define sl = Character(_("Samantha Lane")) # G3TV, Screen Savers
 define rc = Character(_("Ronald Chump")) # Trump paraody, not president
