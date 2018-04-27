@@ -48,17 +48,41 @@ label scene2:
     rc "Ronald will only be in line only for a second."
     zc "He only tells the truth by accident, folks."
 
-    jk "We're done."
-    rc "Now drive Chump back home."
-    jk "Yes, sir."
+    rc "Chump likes this town. Think a golf course would be good here, Jinksins?"
+    jk "I'm just a butler."
+    rc "Yes it does."
+    rc "Maybe near the station by those active tracks?"
+    aw "No!"
+    zc "Wait!"
+    aw "Huh?"
+    zc "Why not over at the edge of town?"
+    aw "What are you doing?"
+    zc "You owe me a week of coffee."
+
+    rc "Chump is listening."
+    aw "Talking in third person won't get old at all..."
+    zc "Yes! So much land for a wonderful golf course. Away from the loud noises."
+    rc "Deal!"
+    zc "What!?"
+    jk "You get use to it."
+    aw "Do I still owe that coffee?"
+    zc "Only for the weekend."
+    aw "Yes!"
+
+    jk "A second has passed, sir."
+    rc "What did I tell you kids? Just a second."
+    aw "That was more like an half hour."
+    rc "Billion dollars?"
+    jk "Limo is outside, sir."
+    rc "Goodbye, kids."
 
     & delay()
     zc "..."
     & delay()
     aw "..."
     & delay()
-    zc "So what's on G3TV, Anthony?"
-    aw "Um, well..."
+    zc "If he calls me \"kid\" one more ti-"
+    aw "Goodbye!"
 
     & delay()
     ds "Now serving 100."
@@ -67,7 +91,55 @@ label scene2:
 
 label scene3:
 
+    # show bg fairviewdmv
+
+    "Two hours later"
     ds "Now serving 185"
+
+    # show bg dmvwaitingroom
+
+    aw "What are you doing?"
+    zc "Giving an application one star."
+    aw "Why?"
+    zc "So I can give it a good review."
+    aw "I- wha!?"
+
+    # Anthony gets a beeping from his phone
+
+    aw "..."
+    zc "Is that Channel 45?"
+    aw "Yup."
+    zc "What do they need from you now?"
+    aw "Gotta finish a story for them."
+    zc "But what about the DMV?"
+    ds "Now serving 189."
+    zc "..."
+    aw "I'm sure you'll manage."
+
+    # show bg newsvan
+
+    aw "Hey, Zen."
+    zn "Hey, Anthony."
+    zn "You're not normally here this quickly."
+    aw "DMV."
+    zn "Oh."
+    aw "Shouldn't you be waiting?"
+
+    # show bg dmvwaitingroom
+
+    ds "Now calling 199."
+    zc "I hate the DMV."
+
+    # show bg newsvan
+
+    zn "Oh."
+    $ delay()
+    zn "Wait, you did what!?"
+    zn "Nevermind."
+    aw "So what's up?"
+    zn "We gotta finish our story on the generation gap."
+    aw "Oh. That."
+    aw "How long did Channel 45 give us?"
 
     jump scene4
 
