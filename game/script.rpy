@@ -5,21 +5,18 @@
 label start:
 
     # show bg fairviewdmv
-
     zc "So why are we here?"
-    aw "Mom wants to see something about her car."
+    aw "License renewal."
     zc "Think it'll will take long?"
     aw "It shouldn't take but a fe-"
-
     $ delay()
-    # show bg dmvslothes
 
+    # show bg dmvslothes
     aw "-w minutes."
     zc "..."
     zc "Anthony?"
 
     # show bg dmvcheckin
-
     zc "So?"
     ds "Now serving 12."
     aw "We're number 666."
@@ -29,10 +26,80 @@ label start:
 
 label scene2:
 
-    # show bg dmvwaitingroom
+    # show bg woodviewloop
+    kw "Hey, Winter Green, where's Zack and Anthony?"
+    wg "I think they were going to the DMV today."
+    kw "What!?"
+    wg "You're welcome to spend sometime here."
+    kw "Sure."
 
-    "An hour later"
-    ds "Now serving 45."
+    # show bg wglivingroom
+    kw "..."
+    wg "..."
+    kw "So what have you been doing lately?"
+    wg "Working on a new program."
+    kw "For the two love birds at the DMV?"
+    wh "You really think they're in love?"
+    kw "Just a hunch."
+    kw "So what's the program?"
+    wg "Come. I'll show you."
+
+    # show bg wgbedroom
+    wg "It's a little calculator I've been making in my spare time."
+    kw "Seems a litte basic, don't ya' think?"
+    wg "I'm studying a new programming language, called Spark."
+    kw "Zack did tell me you were a programmer."
+    wg "Interested in learning?"
+    kw "Nah. That stuff is way beyond my realm of understanding."
+    wg "Speaking of, I don't think we've formally met."
+    kw "I'm more of a loner, to be honest."
+    wg "How did you come to know Zack?"
+    kw "Anthony."
+
+    # show pic kitanthonymeet1
+    "We see each other everyday in the morning and evenings."
+
+    # show pic kitanthonymeet2
+    "Then we bumped into each other at the supermarket one day, and the rest is history."
+
+    # show bg wgbedroom
+
+    wg ""
+
+    jump scene3
+
+label scene3:
+
+    # show bg fairviewdmv
+    ds "Now serving 356"
+
+    # show bg dmvwaitingroom
+    aw "What are you doing?"
+    zc "Giving an application one star."
+    aw "Why?"
+    zc "So I can give it a good review."
+    aw "What!? That makes no sense."
+
+    # show bg dmvchn45van
+    zc "Anthony."
+    aw "What?"
+    zc "Channel 45 is here."
+    zc "Is that Zenon?"
+    aw "Yes it is."
+    zn "What are you two doing here?"
+    zc "License renewal."
+    zn "Well, I've been looking for Anthony everywhere."
+    aw "I thought I had the day off."
+    zn "You do."
+    aw ""
+
+    jump scene4
+
+# Save Trump paraody for last
+label scene4:
+
+    # show bg dmvwaitingroom
+    ds "Now serving 245."
     zc "This is gonna take forever."
 
     rc "Scuse me. A billion dollars walking through."
@@ -84,64 +151,7 @@ label scene2:
     zc "If he calls me \"kid\" one more ti-"
     aw "Goodbye!"
 
-    & delay()
-    ds "Now serving 100."
-
-    jump scene3
-
-label scene3:
-
-    # show bg fairviewdmv
-
-    "Two hours later"
-    ds "Now serving 185"
-
-    # show bg dmvwaitingroom
-
-    aw "What are you doing?"
-    zc "Giving an application one star."
-    aw "Why?"
-    zc "So I can give it a good review."
-    aw "I- wha!?"
-
-    # Anthony gets a beeping from his phone
-
-    aw "..."
-    zc "Is that Channel 45?"
-    aw "Yup."
-    zc "What do they need from you now?"
-    aw "Gotta finish a story for them."
-    zc "But what about the DMV?"
-    ds "Now serving 189."
-    zc "..."
-    aw "I'm sure you'll manage."
-
-    # show bg newsvan
-
-    aw "Hey, Zen."
-    zn "Hey, Anthony."
-    zn "You're not normally here this quickly."
-    aw "DMV."
-    zn "Oh."
-    aw "Shouldn't you be waiting?"
-
-    # show bg dmvwaitingroom
-
-    ds "Now calling 199."
-    zc "I hate the DMV."
-
-    # show bg newsvan
-
-    zn "Oh."
-    $ delay()
-    zn "Wait, you did what!?"
-    zn "Nevermind."
-    aw "So what's up?"
-    zn "We gotta finish our story on the generation gap."
-    aw "Oh. That."
-    aw "How long did Channel 45 give us?"
-
-    jump scene4
+    return
 
 label ddrscene3:
 
@@ -172,24 +182,3 @@ label ddrscene3:
         zc "Yeah!"
 
     jump scene4
-
-label scene4:
-
-    # show bg anthonysroom
-
-    zc "Is it possible for you to get pregnant?"
-    aw "Wait, wha!?"
-    aw "... Uh."
-
-    $ delay()
-
-    aw "I don't know. Never tried to do {b}it{/b} before."
-    zc "You're a-?"
-    aw "Yes."
-
-    # $ journal_entry("Zack Casey discovered aw is a virgin.")
-
-    zc "Why not?"
-    aw ""
-
-    return
