@@ -60,11 +60,11 @@ label scene2:
     "We see each other everyday in the morning and evenings."
 
     # show pic kitanthonymeet2
-    "Then we bumped into each other at the supermarket one day, and the rest is history."
+    "Then we bumped into each other at the supermarket one day."
 
     # show bg wgbedroom
-
-    wg ""
+    wg "Cool."
+    kw "Yeah. Rest is history, of course."
 
     jump scene3
 
@@ -86,12 +86,22 @@ label scene3:
     zc "Channel 45 is here."
     zc "Is that Zenon?"
     aw "Yes it is."
+
+    # show bg dmvwaitingroom
     zn "What are you two doing here?"
     zc "License renewal."
     zn "Well, I've been looking for Anthony everywhere."
     aw "I thought I had the day off."
     zn "You do."
-    aw ""
+    aw "So what are you are?"
+    zn "News story going on around this area."
+    zc "You go on. I'll be watching G3TV in the meantime."
+
+    # show bg dmvchn45van
+    zn "We're doing a news story on the bank that got robbed on the otherside of the DMV."
+    aw "I know this is my break but it's not like we're doing anything back there."
+    zn "You'd be willing to help?"
+    aw "As long as I'm not in the front of the camera this time."
 
     jump scene4
 
