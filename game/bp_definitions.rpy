@@ -19,6 +19,7 @@ define sl = Character(_("Samantha Lane")) # G3TV, Screen Savers
 define rc = Character(_("Ronald Chump")) # Trump paraody, not president
 
 ## Constants ###################################################################
+default image_dir = "images"
 default music_dir = "music"
 default bp_license = _("The binaries and source code of this program have been made available to you under the Mozilla Public License 2.0 (MPL).")
 
@@ -26,9 +27,12 @@ default bp_license = _("The binaries and source code of this program have been m
 # TBA
 
 ## Images ######################################################################
-define ddr_skip = False
-# ddr_mode is a possible future mini-game
-define ddr_mode = False
+image zack = "[image_dir]/zack.png"
+image anthony = "[image_dir]/anthony.png"
+image zenon = "[image_dir]/zenon.png"
+image winter = "[image_dir]/winter.png"
+image kit = "[image_dir]/kit.png"
+image sloth = "[image_dir]/sloth.png"
 
 ## Soundtrack ##################################################################
 define theme_song = "[music_dir]/theme.ogg"

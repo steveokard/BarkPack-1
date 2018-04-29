@@ -5,33 +5,61 @@
 label start:
 
     # show bg fairviewdmv
+    show zack
     zc "So why are we here?"
+    hide zack
+    show anthony
     aw "License renewal."
+    show zack at right
     zc "Think it'll will take long?"
     aw "It shouldn't take but a fe-"
     $ delay()
+    hide anthony
+    hide zack
 
     # show bg dmvslothes
+    show anthony
     aw "-w minutes."
+    show zack at left
     zc "..."
     zc "Anthony?"
+    hide anthony
+    hide zack
 
     # show bg dmvcheckin
+    show zack
     zc "So?"
+    hide zack
+    show sloth
     ds "Now serving 12."
+    hide sloth
+    show anthony
     aw "We're number 666."
+    hide anthony
+    show zack
     zc "Why do I get the feeling it'll be a long day?"
+    hide zack
 
     jump scene2
 
 label scene2:
 
     # show bg woodviewloop
+    show kit
     kw "Hey, Winter Green, where's Zack and Anthony?"
+    show winter
+    hide kit
     wg "I think they were going to the DMV today."
+    $ delay()
+    show kit
     kw "What!?"
+    show winter
+    show kit at left
     wg "You're welcome to spend sometime here."
+    hide winter
+    show kit
     kw "Sure."
+    hide kit
 
     # show bg wglivingroom
     kw "..."
@@ -39,7 +67,7 @@ label scene2:
     kw "So what have you been doing lately?"
     wg "Working on a new program."
     kw "For the two love birds at the DMV?"
-    wh "You really think they're in love?"
+    wg "You really think they're in love?"
     kw "Just a hunch."
     kw "So what's the program?"
     wg "Come. I'll show you."
@@ -169,11 +197,11 @@ label scene100:
     jk "Limo is outside, sir."
     rc "Goodbye, kids."
 
-    & delay()
+    $ delay()
     zc "..."
-    & delay()
+    $ delay()
     aw "..."
-    & delay()
+    $ delay()
     zc "If he calls me \"kid\" one more ti-"
     aw "Goodbye!"
 
