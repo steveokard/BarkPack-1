@@ -152,33 +152,3 @@ label scene4:
     aw "Goodbye!"
 
     return
-
-label ddrscene3:
-
-    # show bg andrewshouse
-
-    aw "Up for some DDR?"
-
-    menu:
-        "Play DDR song 1":
-            jump ddr_scene1
-
-        "Play DDR song 2":
-            jump ddr_scene2
-
-        "Play DDR song 3":
-            jump ddr_scene3
-
-        "Play DDR song 4":
-            jump ddr_scene4
-        "Skip":
-            $ ddr_skip = True
-            zc "Maybe next time."
-            aw "Okay."
-
-    if ddr_skip is False:
-        zc "Good game."
-        aw "Maybe we can play another time?"
-        zc "Yeah!"
-
-    jump scene4
