@@ -11,6 +11,7 @@ define kw = Character(_("Kit Welsh"))
 define zn = Character(_("Zenon Tigerpaw"))
 # Universe
 define ds = Character(_("DMV Sloth")) # Filler name
+define dn = Character(_("Deanna Nash"))
 define wg = Character(_("Winter Green"))
 define jk = Character(_("Jinkins")) # Reusable character, think Nurse Joy
 define kc = Character(_("Kevin Clover")) # G3TV, Screen Savers

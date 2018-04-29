@@ -1,8 +1,8 @@
 # Map References
 
-## Woodview Loop
+## Woodview Lane
 
-``residential_map_reference.png`` is the reference for the Woodview Loop cul-de-sac, located in the left top or bottom corners in the reference.
+``residential_map_reference.png`` is the reference for Woodview Lane. The road leads to a cul-de-sac located near the bottom end of the division.
 
 ## Centre Way
 

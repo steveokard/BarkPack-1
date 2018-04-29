@@ -80,7 +80,7 @@ label scene3:
     zc "So I can give it a good review."
     aw "What!? That makes no sense."
 
-    # show bg dmvchn45van
+    # show bg ketotvunit
     zc "Anthony."
     aw "What?"
     zc "Channel 45 is here."
@@ -97,16 +97,32 @@ label scene3:
     zn "News story going on around this area."
     zc "You go on. I'll be watching G3TV in the meantime."
 
-    # show bg dmvchn45van
-    zn "We're doing a news story on the bank that got robbed on the otherside of the DMV."
-    aw "I know this is my break but it's not like we're doing anything back there."
+    # show bg ketotvunit
+    zn "We're doing a news story on the bank that got robbed on the otherside here."
+    aw "I know this is my break but it's not like we're doing anything back at the DMV."
     zn "You'd be willing to help?"
     aw "As long as I'm not in the front of the camera this time."
 
-    jump scene4
+    # show bg fairviewbank
+    aw "And 3... 2... 1..."
+    dn "We now return to Zenon Tigerpaw with an update to the robbery."
+    zn "Thanks, Deanna. The cops were able to take down the crimial before he could hurt any hostages."
+    dn "Any word on the motives?"
+    zn "No, Deanna. He did go on about \"new world order\" after he was arrested."
+    dn "Thanks, Zenon."
+    "This is KETO-TV, Channel 45."
+
+    # show bg ketotvunit
+    aw "And, that's a wrap."
+    zn "Not bad director work, little fen."
+    aw "Thanks. Zack and I made a lot of home movies in the past."
+    zn "Really? Should me now."
+    aw "I'll have to check to see if I have any saved."
+
+    return
 
 # Save Trump paraody for last
-label scene4:
+label scene100:
 
     # show bg dmvwaitingroom
     ds "Now serving 245."
