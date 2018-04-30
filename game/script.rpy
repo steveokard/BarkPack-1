@@ -47,14 +47,14 @@ label scene2:
     # show bg woodviewloop
     show kit
     kw "Hey, Winter Green, where's Zack and Anthony?"
-    show winter
     hide kit
+    show winter
     wg "I think they were going to the DMV today."
     $ delay()
     show kit
     kw "What!?"
+    hide kit
     show winter
-    show kit at left
     wg "You're welcome to spend sometime here."
     hide winter
     show kit
@@ -62,10 +62,18 @@ label scene2:
     hide kit
 
     # show bg wglivingroom
+    show kit
     kw "..."
+    hide kit
+    show winter
     wg "..."
+    hide kit
+    show kit
     kw "So what have you been doing lately?"
+    hide kit
+    show winter
     wg "Working on a new program."
+    show kit at left
     kw "For the two love birds at the DMV?"
     wg "You really think they're in love?"
     kw "Just a hunch."
@@ -73,9 +81,9 @@ label scene2:
     wg "Come. I'll show you."
 
     # show bg wgbedroom
-    wg "It's a little calculator I've been making in my spare time."
-    kw "Seems a litte basic, don't ya' think?"
-    wg "I'm studying a new programming language, called Spark."
+    wg "I'm working on a vector graphics editor. I've been making in my spare time."
+    kw "You made that in your spare time?"
+    wg "Yeah. I'm studying a new programming language, called Spark."
     kw "Zack did tell me you were a programmer."
     wg "Interested in learning?"
     kw "Nah. That stuff is way beyond my realm of understanding."
@@ -83,6 +91,8 @@ label scene2:
     kw "I'm more of a loner, to be honest."
     wg "How did you come to know Zack?"
     kw "Anthony."
+    hide kit
+    hide winter
 
     # show pic kitanthonymeet1
     "We see each other everyday in the morning and evenings."
@@ -91,7 +101,9 @@ label scene2:
     "Then we bumped into each other at the supermarket one day."
 
     # show bg wgbedroom
+    show winter at right
     wg "Cool."
+    show kit
     kw "Yeah. Rest is history, of course."
 
     jump scene3
