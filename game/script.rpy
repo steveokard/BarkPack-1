@@ -75,10 +75,16 @@ label scene2:
     wg "Working on a new program."
     show kit at left
     kw "For the two love birds at the DMV?"
+    hide kit
+    show winter
     wg "You really think they're in love?"
+    show kit
     kw "Just a hunch."
     kw "So what's the program?"
+    show winter at right
     wg "Come. I'll show you."
+    hide kit
+    hide winter
 
     # show bg wgbedroom
     wg "I'm working on a vector graphics editor. I've been making in my spare time."
@@ -105,6 +111,8 @@ label scene2:
     wg "Cool."
     show kit
     kw "Yeah. Rest is history, of course."
+    hide kit
+    hide winter
 
     jump scene3
 
@@ -144,7 +152,10 @@ label scene3:
     aw "As long as I'm not in the front of the camera this time."
 
     # show bg fairviewbank
-    aw "And 3... 2... 1..."
+    aw "And,"
+    extend " 3..."
+    extend " 2..."
+    extend " 1..."
     dn "We now return to Zenon Tigerpaw with an update to the robbery."
     zn "Thanks, Deanna. The cops were able to take down the crimial before he could hurt any hostages."
     dn "Any word on the motives?"
@@ -156,8 +167,40 @@ label scene3:
     aw "And, that's a wrap."
     zn "Not bad director work, little fen."
     aw "Thanks. Zack and I made a lot of home movies in the past."
-    zn "Really? Should me now."
-    aw "I'll have to check to see if I have any saved."
+    zn "Really? Should show me now."
+    aw "I'll have to check to see if I have anything saved."
+
+    jump scene4
+
+label scene4:
+
+    # show bg wgbedroom
+    kw "I noticed you have a lot of electronics lying around."
+    wg "Oh yeah. I've been tinkering in it lately."
+    kw "Is there anything you don't do?"
+    wg "I can't drive."
+    hide winter
+    hide kit
+
+    # show bg wggarage
+    kw "What do all of these do?"
+    ## The design of the transmitter is based on the one from Sims 3: University life
+    wg "Anthony wanted to see if I could make a radio transmitter."
+    # show bg wgradio
+    wg "It transmits to AM and FM."
+    kw "And it works?"
+    wg "Haven't tested it yet."
+    kw "I wonder what it's range is."
+    wg "Wanna try it out?"
+    kw "Sure!"
+
+    # show bg wgoutsidegarage
+    wg "Tuning in."
+    $ kfbroad = "This is Kit broadcasting live from Fairview."
+    kw "[kfbroad]"
+    "Radio" "[kfbroad]"
+    wg "It works!"
+    kw "Sweet!"
 
     return
 
