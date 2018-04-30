@@ -1,6 +1,6 @@
 # Winter Green
 
-Winter Green is a character created by the person going under the same name. He is (possibly) the workhorse of the group, although it'll mostly be played for laughs. He is first introduced in Anthony & Zack in the second scene when Kit asks Winter the two title characters.
+Winter Green is a character created by the person going under the same name. He is (possibly) the workhorse of the group, although it'll mostly be played for laughs. He is first introduced in Anthony & Zack in the second scene when Kit asks Winter where the two title characters are.
 
 ## Abilities
 
