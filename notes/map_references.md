@@ -6,4 +6,4 @@
 
 ## Centre Way
 
-``dmv_map_reference.png`` is the reference for Centre Way road, where the DMV is located.
+``dmv_map_reference.png`` is the reference for Centre Way road, where the DMV and National Bank is located.

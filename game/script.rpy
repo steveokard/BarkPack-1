@@ -12,27 +12,25 @@ label start:
     zc "So why are we here?"
     hide zack
     show anthony
-    aw "License renewal."
+    aw "License renewal. Expires soon."
     show zack at right
-    zc "Think it'll will take long?"
-    aw "It shouldn't take but a fe-"
+    zc "Think it'll take long?"
+    aw "It shouldn't take but a few-"
     $ delay()
     hide anthony
     hide zack
 
     # show bg dmvslothes
     show anthony
-    aw "-w minutes."
+    aw "minutes."
     show zack at left
     zc "..."
+    $ delay()
     zc "Anthony?"
     hide anthony
     hide zack
 
     # show bg dmvcheckin
-    show zack
-    zc "So?"
-    hide zack
     show sloth
     ds "Now serving 12."
     hide sloth
@@ -40,7 +38,7 @@ label start:
     aw "We're number 666."
     hide anthony
     show zack
-    zc "Why do I get the feeling it'll be a long day?"
+    zc "Why do I get the feeling this will be a long day?"
     hide zack
 
     jump scene2
@@ -77,13 +75,7 @@ label scene2:
     show winter
     wg "Working on a new program."
     show kit at left
-    kw "For the two love birds at the DMV?"
-    hide kit
-    show winter
-    wg "You really think they're in love?"
-    show kit
-    kw "Just a hunch."
-    kw "So what's the program?"
+    kw "Oh? What is it?"
     show winter at right
     wg "Come. I'll show you."
     hide kit
@@ -127,7 +119,7 @@ label scene3:
 
     # show bg fairviewdmv
     show sloth
-    ds "Now serving 356"
+    ds "Now serving 753."
     hide sloth
     show anthony
     aw "I'm so glad that's ove-"
@@ -142,7 +134,7 @@ label scene3:
     show anthony
     aw "What!? That makes no sense."
     hide anthony
-    
+
     show zack
     zc "... Anthony"
     show anthony at right
@@ -233,6 +225,7 @@ label scene5:
     # show bg fvshuhidiner
     aw "Mmm... So good."
     zc "Try not to inhale it all."
+    "Anthony burps."
     aw "Sorry."
 
     return
