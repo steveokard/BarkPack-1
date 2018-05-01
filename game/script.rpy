@@ -4,6 +4,9 @@
 
 label start:
 
+    show bg sixam
+    $ delay()
+    hide bg sixam
     # show bg fairviewdmv
     show zack
     zc "So why are we here?"
@@ -100,17 +103,21 @@ label scene2:
     hide kit
     hide winter
 
-    # show pic kitanthonymeet1
+    # show bg kitawfb1
     "We see each other everyday in the morning and evenings."
 
-    # show pic kitanthonymeet2
+    # show bg kitawfb2
     "Then we bumped into each other at the supermarket one day."
 
+    # show bg kitzackfb
+    "He introduced to me Zack shortly after that."
+
     # show bg wgbedroom
-    show winter at right
-    wg "Cool."
+    hide kit
+    show winter at left
+    wg "Sounds like you guys really hit it off."
     show kit
-    kw "Yeah. Rest is history, of course."
+    kw "Yup. Rest is history, of course."
     hide kit
     hide winter
 
@@ -119,56 +126,48 @@ label scene2:
 label scene3:
 
     # show bg fairviewdmv
+    show sloth
     ds "Now serving 356"
-
-    # show bg dmvwaitingroom
+    hide sloth
+    show anthony
+    aw "I'm so glad that's ove-"
     aw "What are you doing?"
+    hide anthony
+    show zack
     zc "Giving an application one star."
+    show anthony at left
     aw "Why?"
     zc "So I can give it a good review."
+    hide zack
+    show anthony
     aw "What!? That makes no sense."
-
-    # show bg ketotvunit
-    zc "Anthony."
+    hide anthony
+    
+    show zack
+    zc "... Anthony"
+    show anthony at right
     aw "What?"
-    zc "Channel 45 is here."
-    zc "Is that Zenon?"
-    aw "Yes it is."
-
-    # show bg dmvwaitingroom
+    show zack at right
+    zc "Is that channel 45?"
+    aw "Yes. Yes it is."
+    hide anthony
+    hide zack
+    show zenon
     zn "What are you two doing here?"
-    zc "License renewal."
-    zn "Well, I've been looking for Anthony everywhere."
-    aw "I thought I had the day off."
-    zn "You do."
-    aw "So what are you are?"
-    zn "News story going on around this area."
-    zc "You go on. I'll be watching G3TV in the meantime."
-
-    # show bg ketotvunit
-    zn "We're doing a news story on the bank that got robbed on the otherside here."
-    aw "I know this is my break but it's not like we're doing anything back at the DMV."
-    zn "You'd be willing to help?"
-    aw "As long as I'm not in the front of the camera this time."
-
-    # show bg fairviewbank
-    aw "And,"
-    extend " 3..."
-    extend " 2..."
-    extend " 1..."
-    dn "We now return to Zenon Tigerpaw with an update to the robbery."
-    zn "Thanks, Deanna. The cops were able to take down the crimial before he could hurt any hostages."
-    dn "Any word on the motives?"
-    zn "No, Deanna. He did go on about \"new world order\" after he was arrested."
-    dn "Thanks, Zenon."
-    "This is KETO-TV, Channel 45."
-
-    # show bg ketotvunit
-    aw "And, that's a wrap."
-    zn "Not bad director work, little fen."
-    aw "Thanks. Zack and I made a lot of home movies in the past."
-    zn "Really? Should show me now."
-    aw "I'll have to check to see if I have anything saved."
+    hide zenon
+    show anthony
+    aw "Needed to get my license renewed. "
+    extend "Why is the crew here?"
+    hide anthony
+    show zenon
+    zn "There was a robbery over at Nation Holdings yesterday."
+    show zack at left
+    zc "Don't you have the day off, Anthony?"
+    zn "Yes he does."
+    show anthony
+    hide zack
+    hide zenon
+    aw "And I'm standing behind that camera!"
 
     jump scene4
 
@@ -180,84 +179,60 @@ label scene4:
     kw "Is there anything you don't do?"
     wg "I can't drive."
     hide winter
+    show kit
+    kw "..."
     hide kit
 
     # show bg wggarage
     kw "What do all of these do?"
-    ## The design of the transmitter is based on the one from Sims 3: University life
-    wg "Anthony wanted to see if I could make a radio transmitter."
+    ## The design is based on the radio transmitter from Sims 3: University life
+    wg "This is a radio transmitter."
+    wg "Anthony wanted to see if I could make one just for the heck of it."
     # show bg wgradio
     wg "It transmits to AM and FM."
     kw "And it works?"
     wg "Haven't tested it yet."
-    kw "I wonder what it's range is."
+    kw "I wonder what the range of it is."
     wg "Wanna try it out?"
     kw "Sure!"
 
     # show bg wgoutsidegarage
     wg "Tuning in."
-    $ kfbroad = "This is Kit broadcasting live from Fairview."
+    $ kfbroad = "This is Kit broadcasting live from Fairview!"
     kw "[kfbroad]"
     "Radio" "[kfbroad]"
     wg "It works!"
-    kw "Sweet!"
+    kw "This is so exciting!"
+    wg "I know, right?"
 
-    return
+    kw "Maybe Zack can help start a small radio station."
+    wg "Think he'd be up for it?"
+    kw "Why not? He really enjoys mixing music."
 
-# Save Trump paraody for last
-label scene100:
+    jump scene5
 
-    # show bg dmvwaitingroom
-    ds "Now serving 245."
-    zc "This is gonna take forever."
+label scene5:
 
-    rc "Scuse me. A billion dollars walking through."
-    aw "And who are you?"
-    rc "Ronald Chump. Billionare."
-    zc "We got the latter part already."
-    rc "Myself and I are coming to renew my license."
+    zn "The cops were able to take down the crimial before he could hurt any hostages."
+    dn "Any word on the motives?"
+    zn "No, Deanna. He did go on about \"new world order\" after he was arrested."
+    dn "Thanks, Zenon."
+    "This is KETO-TV, Channel 45."
+    ea "And that's a wrap."
 
-    zc "Then get in line like the rest of us."
-    rc "Of course. Jinkins, fetch my papers while I wait in line with these kids."
-    jk "Yes, sir."
-    aw "We're in our 20s."
-    rc "Ronald will only be in line only for a second."
-    zc "He only tells the truth by accident, folks."
+    zc "\"New world order\"?"
+    aw "Don't ask."
+    zn "So where are you two headed?"
+    aw "Uh... "
+    extemd "Hmm... "
+    extend "Zack?"
+    zc "Up for some shushi?"
+    aw "Shushi!"
+    zn "I won't keep you. DMV is one hell of a wait."
 
-    rc "Chump likes this town. Think a golf course would be good here, Jinksins?"
-    jk "I'm just a butler."
-    rc "Yes it does."
-    rc "Maybe near the station by those active tracks?"
-    aw "No!"
-    zc "Wait!"
-    aw "Huh?"
-    zc "Why not over at the edge of town?"
-    aw "What are you doing?"
-    zc "You owe me a week of coffee."
-
-    rc "Chump is listening."
-    aw "Talking in third person won't get old at all..."
-    zc "Yes! So much land for a wonderful golf course. Away from the loud noises."
-    rc "Deal!"
-    zc "What!?"
-    jk "You get use to it."
-    aw "Do I still owe that coffee?"
-    zc "Only for the weekend."
-    aw "Yes!"
-
-    jk "A second has passed, sir."
-    rc "What did I tell you kids? Just a second."
-    aw "That was more like an half hour."
-    rc "Billion dollars?"
-    jk "Limo is outside, sir."
-    rc "Goodbye, kids."
-
-    $ delay()
-    zc "..."
-    $ delay()
-    aw "..."
-    $ delay()
-    zc "If he calls me \"kid\" one more ti-"
-    aw "Goodbye!"
+    # show bg fvshuhidiner
+    aw "Mmm... So good."
+    zc "Try not to inhale it all."
+    aw "Sorry."
 
     return

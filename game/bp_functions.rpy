@@ -7,10 +7,6 @@ init python:
     # Multi-game persitence data
     mp = MultiPersistent("barkpack.mp")
 
-init:
-    if not mp.journal:
-        $ mp.journal = []
-
 init -1 python:
 
     def journal_entry(item):

@@ -314,6 +314,8 @@ screen navigation():
             textbutton _("Save") action ShowMenu("save")
 
         textbutton _("Load") action ShowMenu("load")
+        
+        textbutton _("Scenes") action ShowMenu("scenes")
 
         textbutton _("Preferences") action ShowMenu("preferences")
 

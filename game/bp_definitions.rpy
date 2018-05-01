@@ -9,9 +9,10 @@ define zc = Character(_("Zack Casey"))
 define kw = Character(_("Kit Welsh"))
 # Channel 45
 define zn = Character(_("Zenon Tigerpaw"))
+define ea = Character(_("Evan Aries"))
+define dn = Character(_("Deanna Nash"))
 # Universe
 define ds = Character(_("DMV Sloth")) # Filler name
-define dn = Character(_("Deanna Nash"))
 define wg = Character(_("Winter Green"))
 define jk = Character(_("Jinkins")) # Reusable character, think Nurse Joy
 define kc = Character(_("Kevin Clover")) # G3TV, Screen Savers
@@ -27,12 +28,15 @@ default bp_license = _("The binaries and source code of this program have been m
 # TBA
 
 ## Images ######################################################################
+# Characters
 image zack = "[image_dir]/zack.png"
 image anthony = "[image_dir]/anthony.png"
 image zenon = "[image_dir]/zenon.png"
 image winter = "[image_dir]/winter.png"
 image kit = "[image_dir]/kit.png"
 image sloth = "[image_dir]/sloth.png"
+# Backgrounds
+image bg sixam = "[image_dir]/sixam_splash.png"
 
 ## Soundtrack ##################################################################
 define theme_song = "[music_dir]/theme.ogg"
