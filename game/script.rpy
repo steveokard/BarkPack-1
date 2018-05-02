@@ -96,13 +96,13 @@ label scene2:
     hide winter
 
     # show bg kitawfb1
-    "We see each other everyday in the morning and evenings."
+    "We saw each other everyday in the morning and evenings."
 
     # show bg kitawfb2
     "Then we bumped into each other at the supermarket one day."
 
     # show bg kitzackfb
-    "He introduced to me Zack shortly after that."
+    "He introduced me to Zack shortly after that."
 
     # show bg wgbedroom
     hide kit
@@ -232,12 +232,12 @@ label scene5:
     "A couple walks into Sushi-ya the boy wearing a shiny, glittery, outfit."
     aw "Hey, hey! Can you get rid of the disco lights?"
     ec "Sorry about that."
-    ms "Don't worry about, sweety. You can put it back on in the car."
-    zc "So what brings you to these neck of the woods?"
+    ms "Don't worry about it, sweety. You can put it back on in the car."
+    zc "So what brings you to this neck of the woods?"
     ec "Getting away from her da-"
     ms "Fishing! Speaking of fish, how's the Sushi here?"
     zc "Quite good, actually."
-    ec "We better find a seat."
+    ec "We'd better find a seat."
     ms "Nice meeting you."
     aw "Yup."
     "Zack sneaks up to Anthony and whispers..."
