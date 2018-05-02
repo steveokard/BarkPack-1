@@ -218,8 +218,8 @@ label scene5:
     aw "Uh... "
     extemd "Hmm... "
     extend "Zack?"
-    zc "Up for some Sushi?"
-    aw "Sushi!"
+    zc "Up for some sushi?"
+    aw "SUSHI!"
     zt "I won't keep you. DMV is one hell of a wait."
 
     # show bg inside harusushi
