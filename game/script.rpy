@@ -96,13 +96,13 @@ label scene2:
     hide winter
 
     # show bg kitawfb1
-    "We see each other everyday in the morning and evenings."
+    "We saw each other everyday in the morning and evenings."
 
     # show bg kitawfb2
     "Then we bumped into each other at the supermarket one day."
 
     # show bg kitzackfb
-    "He introduced to me Zack shortly after that."
+    "He introduced me to Zack shortly after that."
 
     # show bg wgbedroom
     hide kit
@@ -218,8 +218,8 @@ label scene5:
     aw "Uh... "
     extemd "Hmm... "
     extend "Zack?"
-    zc "Up for some shushi?"
-    aw "Shushi!"
+    zc "Up for some sushi?"
+    aw "SUSHI!"
     zn "I won't keep you. DMV is one hell of a wait."
 
     # show bg fvshuhidiner
