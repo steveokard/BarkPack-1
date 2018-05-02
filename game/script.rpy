@@ -7,7 +7,7 @@ label start:
     show bg sixam
     $ delay()
     hide bg sixam
-    # show bg fairviewdmv
+    # show bg outside fairviewdmv
     show zack
     zc "So why are we here?"
     hide zack
@@ -117,7 +117,7 @@ label scene2:
 
 label scene3:
 
-    # show bg fairviewdmv
+    # show bg outside fairviewdmv
     show sloth
     ds "Now serving 753."
     hide sloth
@@ -145,17 +145,17 @@ label scene3:
     hide anthony
     hide zack
     show zenon
-    zn "What are you two doing here?"
+    zt "What are you two doing here?"
     hide zenon
     show anthony
     aw "Needed to get my license renewed. "
     extend "Why is the crew here?"
     hide anthony
     show zenon
-    zn "There was a robbery over at Nation Holdings yesterday."
+    zt "There was a robbery over at Nation Holdings yesterday."
     show zack at left
     zc "Don't you have the day off, Anthony?"
-    zn "Yes he does."
+    zt "Yes he does."
     show anthony
     hide zack
     hide zenon
@@ -175,7 +175,7 @@ label scene4:
     kw "..."
     hide kit
 
-    # show bg wggarage
+    # show bg inside wggarage
     kw "What do all of these do?"
     ## The design is based on the radio transmitter from Sims 3: University life
     wg "This is a radio transmitter."
@@ -188,7 +188,7 @@ label scene4:
     wg "Wanna try it out?"
     kw "Sure!"
 
-    # show bg wgoutsidegarage
+    # show bg outside wggarage
     wg "Tuning in."
     $ kfbroad = "This is Kit broadcasting live from Fairview!"
     kw "[kfbroad]"
@@ -205,27 +205,43 @@ label scene4:
 
 label scene5:
 
-    zn "The cops were able to take down the crimial before he could hurt any hostages."
+    zt "The cops were able to take down the crimial before he could hurt any hostages."
     dn "Any word on the motives?"
-    zn "No, Deanna. He did go on about \"new world order\" after he was arrested."
+    zt "No, Deanna. He did go on about \"new world order\" after he was arrested."
     dn "Thanks, Zenon."
     "This is KETO-TV, Channel 45."
     ea "And that's a wrap."
 
     zc "\"New world order\"?"
     aw "Don't ask."
-    zn "So where are you two headed?"
+    zt "So where are you two headed?"
     aw "Uh... "
     extemd "Hmm... "
     extend "Zack?"
-    zc "Up for some shushi?"
-    aw "Shushi!"
-    zn "I won't keep you. DMV is one hell of a wait."
+    zc "Up for some Sushi?"
+    aw "Sushi!"
+    zt "I won't keep you. DMV is one hell of a wait."
 
-    # show bg fvshuhidiner
-    aw "Mmm... So good."
-    zc "Try not to inhale it all."
+    # show bg inside harusushi
+    # Sushi-ya (Sushi Shop)
+    zc "Mmm... So good."
+    aw "Try not to inhale it all."
     "Anthony burps."
-    aw "Sorry."
+    zc "Sorry."
+
+    "A couple walks into Sushi-ya the boy wearing a shiny, glittery, outfit."
+    aw "Hey, hey! Can you get rid of the disco lights?"
+    ec "Sorry about that."
+    ms "Don't worry about, sweety. You can put it back on in the car."
+    zc "So what brings you to these neck of the woods?"
+    ec "Getting away from her da-"
+    ms "Fishing! Speaking of fish, how's the Sushi here?"
+    zc "Quite good, actually."
+    ec "We better find a seat."
+    ms "Nice meeting you."
+    aw "Yup."
+    "Zack sneaks up to Anthony and whispers..."
+    zc "[i]She's a very kinky girl ...[/i]"
+    aw "[i]the kind you don't take home to mother.[/i]"
 
     return

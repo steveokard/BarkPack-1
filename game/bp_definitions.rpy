@@ -8,11 +8,13 @@ define aw = Character(_("Anthony Wilcox"))
 define zc = Character(_("Zack Casey"))
 define kw = Character(_("Kit Welsh"))
 # Channel 45
-define zn = Character(_("Zenon Tigerpaw"))
+define zt = Character(_("Zenon Tigerpaw"))
 define ea = Character(_("Evan Aries"))
 define dn = Character(_("Deanna Nash"))
 # Universe
 define ds = Character(_("DMV Sloth")) # Filler name
+define ec =  Character(_("Ed Colton"))
+define ms =  Character(_("Melody Swan"))
 define wg = Character(_("Winter Green"))
 define jk = Character(_("Jinkins")) # Reusable character, think Nurse Joy
 define kc = Character(_("Kevin Clover")) # G3TV, Screen Savers
