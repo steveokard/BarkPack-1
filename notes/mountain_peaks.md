@@ -1,6 +1,6 @@
 # Amtrak's Mountain Peaks
 
-Mountain Peaks is an active Amtrak train that stops at Fairview. In real life the train served Chicago, Kansas City, Oklahoma City, Fort Worth, Houston and intermediate points.
+Mountain Peaks is an active Amtrak train that stops at Fairview. The train serves California, Chicago and Washington, DC, with Fairview being an intermediate stop.
 
 ## Artistic license
 
