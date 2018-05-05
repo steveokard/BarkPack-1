@@ -14,7 +14,7 @@ These are the original characters or fursonas made by others that are not part o
 
 ### Notes
 
-Saveli Cornell is the third incarnation of Dr. Puppy. He is a much more toned down version than previous incarnations. He likes to tinker around with robots just as a hobby. This was inspired by My Ordinary Life's Hakase and the CU era. Although toned down, his short fuse from the Deviant era does return as well. He doesn't pursue of power or chaos like before but he does get ahead of himself and is chaotic in nature.
+Saveli Cornell is the third incarnation of Dr. Puppy. He is a much more toned down version than previous incarnations. He likes to tinker around with robots just as a hobby. This was inspired by My Ordinary Life's Hakase and the CU era. Although toned down, his short fuse, and hates being called "puppy," just like the Deviant era. He doesn't pursue of power or chaos like before but he does get ahead of himself and is chaotic in nature.
 
 ## Rolan Yamamoto
 
