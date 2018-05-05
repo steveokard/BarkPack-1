@@ -7,7 +7,9 @@ label start:
     show bg sixam
     $ delay()
     hide bg sixam
-    # show bg outside fairviewdmv
+    show bg outside fairviewdmv
+    "Monday"
+    "Fairview DMV"
     show zack
     zc "So why are we here?"
     hide zack
@@ -19,6 +21,7 @@ label start:
     $ delay()
     hide anthony
     hide zack
+    hide bg outside fairviewdmv
 
     # show bg dmvslothes
     show anthony
@@ -117,7 +120,7 @@ label scene2:
 
 label scene3:
 
-    # show bg outside fairviewdmv
+    show bg outside fairviewdmv
     show sloth
     ds "Now serving 753."
     hide sloth
@@ -134,6 +137,7 @@ label scene3:
     show anthony
     aw "What!? That makes no sense."
     hide anthony
+    hide bg outside fairviewdmv
 
     show zack
     zc "... Anthony"
@@ -218,30 +222,22 @@ label scene5:
     aw "Uh... "
     extemd "Hmm... "
     extend "Zack?"
-    zc "Up for some sushi?"
-    aw "SUSHI!"
-    zt "I won't keep you. DMV is one hell of a wait."
 
-    # show bg inside harusushi
-    # Sushi-ya (Sushi Shop)
-    zc "Mmm... So good."
-    aw "Try not to inhale it all."
-    "Anthony burps."
-    zc "Sorry."
+    menu:
+        "Where do you want to go, Anthony?"
+        "Shushi-ya":
+            jump s5sushi
+        "Home":
+            jump scene6
 
-    "A couple walks into Sushi-ya the boy wearing a shiny, glittery, outfit."
-    aw "Hey, hey! Can you get rid of the disco lights?"
-    ec "Sorry about that."
-    ms "Don't worry about it, sweety. You can put it back on in the car."
-    zc "So what brings you to this neck of the woods?"
-    ec "Getting away from her da-"
-    ms "Fishing! Speaking of fish, how's the Sushi here?"
-    zc "Quite good, actually."
-    ec "We'd better find a seat."
-    ms "Nice meeting you."
-    aw "Yup."
-    "Zack sneaks up to Anthony and whispers..."
-    zc "[i]She's a very kinky girl ...[/i]"
-    aw "[i]the kind you don't take home to mother.[/i]"
+label scene6:
+
+    kw "The sun is starting to set. What time is it?"
+    wg "Almost 8 o' clock."
+    kw "Yikes! I better head home."
+    wg "Next time?"
+    kw "Sure!"
+
+    # show bg woodviewloop
 
     return

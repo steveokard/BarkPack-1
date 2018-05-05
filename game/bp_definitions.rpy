@@ -27,7 +27,9 @@ default music_dir = "music"
 default bp_license = _("The binaries and source code of this program have been made available to you under the Mozilla Public License 2.0 (MPL).")
 
 ## Variables ###################################################################
-# TBA
+define awpack = False
+define barkings = False
+define triedall = False
 
 ## Images ######################################################################
 # Characters
@@ -39,6 +41,7 @@ image kit = "[image_dir]/kit.png"
 image sloth = "[image_dir]/sloth.png"
 # Backgrounds
 image bg sixam = "[image_dir]/sixam_splash.png"
+image bg outside fairviewdmv = "[image_dir]/outsidefairviewdmv.png"
 
 ## Soundtrack ##################################################################
 define theme_song = "[music_dir]/theme.ogg"
