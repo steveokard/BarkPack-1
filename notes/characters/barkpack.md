@@ -12,7 +12,7 @@ Keep in mind, other people's characters/fursonas can't apart of the in-universe 
 - Occupation: Journalist
 - Sex: CB
 - Eye color: blue on right, green on left
-- Affiliation: Bark Pack, KETO-TV
+- Affiliated: Bark Pack, KETO-TV
 
 ### Notes
 
@@ -25,11 +25,13 @@ While not crucial, I feel his sex/gender needs to be properly addressed without 
 - Occupation: TBA
 - Sex: Male
 - Eye color: Blue
-- Affiliation: Bark Pack
+- Affiliated: Bark Pack
 
 ### Notes
 
-Zack took a career as a DJ in the original web comics in 2005. They had no explicit name until Z's Shorty Manga explicitly had one but they're all considered of the same era up until 2010. This has ben scaled back in Bark Pack to him creating mixes on his computer. The reason behind this is because the DJ career kinda hit the backburner since Z's Shorty Manga and later incarnations.
+Zack took a career as a DJ in the original web comics in 2005. These had no name until Z's Shorty Manga explicitly had one. However, they're all considered of the same era up until 2010.
+
+His career has ben scaled back in Bark Pack to him creating mixes on his computer. The reason behind this is because the DJ career kinda hit the backburner since Z's Shorty Manga and later incarnations.
 
 ## Kit Welsh
 
@@ -38,7 +40,7 @@ Zack took a career as a DJ in the original web comics in 2005. They had no expli
 - Occupation: TBA
 - Sex: CB
 - Eye color: Green
-- Affiliation: Bark Pack
+- Affiliated: Bark Pack
 
 ### Notes
 

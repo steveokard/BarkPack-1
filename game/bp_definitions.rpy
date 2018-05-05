@@ -7,6 +7,9 @@
 define aw = Character(_("Anthony Wilcox"))
 define zc = Character(_("Zack Casey"))
 define kw = Character(_("Kit Welsh"))
+# Recurring
+define sc = Character(_("Saveli Cornell"))
+define ry = Character(_("Rolan Yamamoto")) # Saveli's robot
 # Channel 45
 define zt = Character(_("Zenon Tigerpaw"))
 define ea = Character(_("Evan Aries"))
