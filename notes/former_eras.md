@@ -6,7 +6,9 @@ In order to understand Bark Pack's origins you first got to know about the past.
 
 The Deviant era is the first era. It's when I came up with a range of comedic web comics from slice-of-life or shout outs to real life that were published on DeviantART. It was originally dubbed The Furry Blue DJ era, due to Zack's initial career as a DJ, and included only a small subset of comics. This has been retroactively changed because that never amounted to anything within the comics themselves and would later evolved into Z's Shorty Mnaga.
 
-Many characters were created during this era. Only Saveli Cornell, originally known as Dr. Puppy and his robot companion made it into the Casey Universe era. Saveli and his companion were part of random comic and flash animation called Attack of the Video Games - yes, it's exactly what says on the tin. It was created during my time at a religious private school I had to assumed many wouldn't understand the cultural references of my comics, nor did I want to explain Fair Use to them in regards to me using other people's characters that they never heard of. The comic was relatively finished but I never got around to finish the second part of the animation.
+Many characters were created during this era. Only Saveli Cornell, originally known as Dr. Puppy and his robot companion made it into the Casey Universe era. Saveli and his companion were part of random comic and flash animation called Attack of the Video Games - yes, it's exactly what says on the tin. He created evil video games. I was bored. We'll just say he was testing out his skills as an inventor by replacing a bunch of video games robotic duplicates.
+
+It was created during my time at a religious private school I had to assumed many wouldn't understand the cultural references of my comics, nor did I want to explain Fair Use to them in regards to me using other people's characters that they never heard of. The comic was relatively finished but I never got around to finish the second part of the animation.
 
 ## Casey Universe era
 
