@@ -7,7 +7,9 @@ label start:
     show bg sixam
     $ delay()
     hide bg sixam
-    # show bg fairviewdmv
+    show bg outside fairviewdmv
+    "Monday"
+    "Fairview DMV"
     show zack
     zc "So why are we here?"
     hide zack
@@ -19,6 +21,7 @@ label start:
     $ delay()
     hide anthony
     hide zack
+    hide bg outside fairviewdmv
 
     # show bg dmvslothes
     show anthony
@@ -117,7 +120,7 @@ label scene2:
 
 label scene3:
 
-    # show bg fairviewdmv
+    show bg outside fairviewdmv
     show sloth
     ds "Now serving 753."
     hide sloth
@@ -134,6 +137,7 @@ label scene3:
     show anthony
     aw "What!? That makes no sense."
     hide anthony
+    hide bg outside fairviewdmv
 
     show zack
     zc "... Anthony"
@@ -145,17 +149,17 @@ label scene3:
     hide anthony
     hide zack
     show zenon
-    zn "What are you two doing here?"
+    zt "What are you two doing here?"
     hide zenon
     show anthony
     aw "Needed to get my license renewed. "
     extend "Why is the crew here?"
     hide anthony
     show zenon
-    zn "There was a robbery over at Nation Holdings yesterday."
+    zt "There was a robbery over at Nation Holdings yesterday."
     show zack at left
     zc "Don't you have the day off, Anthony?"
-    zn "Yes he does."
+    zt "Yes he does."
     show anthony
     hide zack
     hide zenon
@@ -175,7 +179,7 @@ label scene4:
     kw "..."
     hide kit
 
-    # show bg wggarage
+    # show bg inside wggarage
     kw "What do all of these do?"
     ## The design is based on the radio transmitter from Sims 3: University life
     wg "This is a radio transmitter."
@@ -188,7 +192,7 @@ label scene4:
     wg "Wanna try it out?"
     kw "Sure!"
 
-    # show bg wgoutsidegarage
+    # show bg outside wggarage
     wg "Tuning in."
     $ kfbroad = "This is Kit broadcasting live from Fairview!"
     kw "[kfbroad]"
@@ -205,16 +209,16 @@ label scene4:
 
 label scene5:
 
-    zn "The cops were able to take down the crimial before he could hurt any hostages."
+    zt "The cops were able to take down the crimial before he could hurt any hostages."
     dn "Any word on the motives?"
-    zn "No, Deanna. He did go on about \"new world order\" after he was arrested."
+    zt "No, Deanna. He did go on about \"new world order\" after he was arrested."
     dn "Thanks, Zenon."
     "This is KETO-TV, Channel 45."
     ea "And that's a wrap."
 
     zc "\"New world order\"?"
     aw "Don't ask."
-    zn "So where are you two headed?"
+    zt "So where are you two headed?"
     aw "Uh... "
     extemd "Hmm... "
     extend "Zack?"
